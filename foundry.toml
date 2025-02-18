@@ -3,4 +3,17 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
-# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+# Automatically fetch contract sources from Etherscan
+auto_fetch_sources = true
+
+
+# Solidity compiler settings
+[compiler]
+solc_version = "0.8.0"
+
+
+
+# Wallet configuration
+[wallet]
+private_key = "${PRIVATE_KEY}"
+mnemonic = "${MNEMONIC}"
